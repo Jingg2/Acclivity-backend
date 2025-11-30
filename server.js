@@ -373,8 +373,13 @@ app.use('/api/settings', settingsRoutes);
 app.use('/api/ratings', ratingsRoutes);
 
 
-const PORT = process.env.PORT || 3000;
+// Test route
+app.get('/', (req, res) => {
+  res.send('Server is live!');
+});
+
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
   console.log(`Access: http://localhost:${PORT}`);
-}); 
+});
