@@ -17,6 +17,7 @@ app.use('/uploads', express.static(path.join(__dirname, '../AcclivityAdmin/uploa
 // Database connection pool
 const db = mysql.createPool({
   host: 'centerbeam.proxy.rlwy.net',
+  port: '46565',
   user: 'root',
   password: 'HZqtjFWFAoTHsFoQeRqIUUShbaVeJzth',
   database: 'railway',
