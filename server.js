@@ -16,10 +16,10 @@ app.use('/uploads', express.static(path.join(__dirname, '../AcclivityAdmin/uploa
 
 // Database connection pool
 const db = mysql.createPool({
-  host: 'localhost',
+  host: 'mysql.railway.internal',
   user: 'root',
-  password: '',
-  database: 'acclivity',
+  password: 'HZqtjFWFAoTHsFoQeRqIUUShbaVeJzth',
+  database: 'railway',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
